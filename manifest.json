@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"author": "ukkary",
+	"name": "openrec-color-changer",
+	"description": "change openrec's name color",
+	"version": "1.1",
+	"icons": {
+		"32": "favicon.ico"
+	},
+	"browser_action": {
+		"matches": ["https://www.openrec.tv/*"],
+		"default_popup": "popup.html"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://www.openrec.tv/*"],
+			"js": ["contents.js"]
+		}
+	]
+}
