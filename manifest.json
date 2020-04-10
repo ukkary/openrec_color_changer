@@ -3,13 +3,13 @@
 	"author": "ukkary",
 	"name": "openrec-color-changer",
 	"description": "change openrec's name color",
-	"version": "1.1",
+	"version": "1.3",
 	"icons": {
     "16": "16.png",
     "48": "48.png",
     "128": "128.png"
 },
-	"browser_action": {
+	"page_action": {
 		"matches": ["https://www.openrec.tv/*"],
 		"default_popup": "popup.html",
 		"default_icon": {
@@ -23,5 +23,9 @@
 			"js": ["contents.js"]
 		}
 	],
-	"permissions": ["declarativeContent", "tabs"]
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"permissions": ["declarativeContent"]
 }
