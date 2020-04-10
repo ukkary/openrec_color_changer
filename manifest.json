@@ -9,7 +9,7 @@
     "48": "48.png",
     "128": "128.png"
 },
-	"page_action": {
+	"browser_action": {
 		"matches": ["https://www.openrec.tv/*"],
 		"default_popup": "popup.html",
 		"default_icon": {
@@ -23,9 +23,5 @@
 			"js": ["contents.js"]
 		}
 	],
-	"background": {
-		"scripts": ["background.js"],
-		"persistent": false
-	},
-	"permissions": ["declarativeContent"]
+	"permissions": ["declarativeContent", "tabs"]
 }
