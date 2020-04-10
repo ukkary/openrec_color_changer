@@ -3,7 +3,7 @@
 	"author": "ukkary",
 	"name": "openrec-color-changer",
 	"description": "change openrec's name color",
-	"version": "1.4",
+	"version": "1.5",
 	"icons": {
     "16": "16.png",
     "48": "48.png",
