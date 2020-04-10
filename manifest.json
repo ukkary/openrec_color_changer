@@ -5,16 +5,27 @@
 	"description": "change openrec's name color",
 	"version": "1.1",
 	"icons": {
-		"32": "favicon.ico"
-	},
-	"browser_action": {
+    "16": "16.png",
+    "48": "48.png",
+    "128": "128.png"
+},
+	"page_action": {
 		"matches": ["https://www.openrec.tv/*"],
-		"default_popup": "popup.html"
+		"default_popup": "popup.html",
+		"default_icon": {
+			"48": "48.png"
+		}
 	},
 	"content_scripts": [
 		{
+			"default_name": "OPENREC-NAME-COLOR",
 			"matches": ["https://www.openrec.tv/*"],
 			"js": ["contents.js"]
 		}
-	]
+	],
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"permissions": ["declarativeContent"]
 }

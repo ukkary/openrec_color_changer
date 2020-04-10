@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/popup.css">
+    <link rel="stylesheet" href="/popup.css">
+    <script src="/jquery-3.4.1.min.js"></script>
+    <script src="/popup.js"></script>
   </head>
+
   <body>
-    <div class="container" style="width: 400px;">
-      <div class="form-row align-items-center">
-        <div>
-          <p>1. ログインする必要があります</p>
-          <p>2. プレミアム会員である必要があります</p>
-          <p>3. 6桁のカラーコードを入力し、送信してください</p>
-        </div>
-        <div class="col-sm-3 my-1">
-          <input type="text" class="form-control keyword" id="color-code" placeholder="#FFFFFF">
-        </div>
-        <div class="col-auto my-1">
-          <button id="submit-button">送信</button>
-        </div>
+    <div class="container">
+      <div class="description">
+        <p>1. ログインする必要があります</p>
+        <p>2. プレミアム会員である必要があります</p>
+        <p>3. 6桁のカラーコードを入力し、送信してください</p>
       </div>
-      <script src="/jquery-3.4.1.min.js"></script>
-      <script src="/popup.js"></script>
+      <div class="input-area">
+        <input type="text" id="color-code" placeholder="#FFFFFF">
+        <button id="submit-button">送信</button>
+      </div>
     </div>
   </body>
+
 </html>

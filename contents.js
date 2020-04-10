@@ -19,9 +19,10 @@ function postColor(color) {
   xhr.send(JSON.stringify(data));
   xhr.onerror = function() {
     alert('通信に失敗したようです、リロードして試してみてください');
-    break;
   }
-  alert('成功したようです');
+  xhr.onload = function () {
+    alert('成功したようです');
+  }
 }
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
